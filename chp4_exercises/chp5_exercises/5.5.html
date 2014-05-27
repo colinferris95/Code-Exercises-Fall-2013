@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Story(5.5)</title>
+</head>
+<body>
+	<h1 style="text-align:center">Colins Story Generator</h1>
+	<p>
+		Once upon a time, our hero <input type="text" id="heroName" size=20 value="Hero's name"> was traveling to 
+		<input type="text" id="placeName" value="Place"> in a <input type="text" id="vehicleName" value="Vehicle">. The
+		<i>same vehicle</i> then broke down in the middle of space! Using a <input type="text" id="objectName" value="object">  		          <i>same hero name</i> was succesful in fixing the ship! In the flight, a <input type="text" id="colorName" value="color"> jem was found, worth
+		<input type="text" id="money" value="Cash value">. Our hero can fight any obstacle with the power of 
+		<input type="text" id="powerName" value="super power name">.
+		
+	</p>
+	<input type="button" value="Click to make story"
+			onclick= "document.getElementById('outputDiv').innerHTML=
+					 'Once upon a time, our hero  ' +	document.getElementById('heroName').value + ' was traveling to ' + 
+					  document.getElementById('placeName').value + ' in a ' + document.getElementById('vehicleName').value +
+					 ' The ' + document.getElementById('vehicleName').value + ' then broke down in the middle of space! Using a  ' + 					    document.getElementById('objectName').value + ' '  + document.getElementById('heroName').value + ' was succesful                         in fixing the ship! In the flight, a ' + document.getElementById('colorName').value	+ ' jem was found, worth ' +
+					  document.getElementById('money').value + '. Our hero can fight any obstacle with the power of ' +
+					  document.getElementById('powerName').value	;">
+		
+	<hr />
+	<div id='outputDiv'></div>
+</body>
+</html>

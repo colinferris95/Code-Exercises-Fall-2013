@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- swap.html                                      Dave Reed -->
+<!-- Web page that swaps two images at the click of a button. -->
+<!-- ======================================================== -->
+
+<html>
+ <head>
+   <title>Image Swapper(5.6)</title>
+ </head>
+
+ <body>
+   <div style="text-align:center">
+     <h2>Image Swapper</h2>
+     <p>
+       <img id="1" src="http://balance3e.com/Images/happy.gif">
+       <img id="2" src="http://balance3e.com/Images/sad.gif">
+	   <img id="3" src="http://balance3e.com/Images/surprised.gif">
+     </p>
+     <input type="button" value="Rotate Left"
+            onclick="saved=document.getElementById(1).src;
+						document.getElementById(1).src=
+						document.getElementById(2).src;
+						document.getElementById(2).src=
+						document.getElementById(3).src;
+						document.getElementById(3).src=
+						saved;">
+			
+	 <input type="button" value="Rotate Right"
+	 		onclick="saved=document.getElementById(3).src;
+						document.getElementById(3).src=
+						document.getElementById(2).src;
+						document.getElementById(2).src=
+						document.getElementById(1).src;
+						document.getElementById(1).src=
+						saved;">
+   </div>
+ </body>
+</html>

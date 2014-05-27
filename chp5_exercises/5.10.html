@@ -1,0 +1,24 @@
+<!doctyper html>
+
+<html>
+	<head>
+		<title>Years(5.10) </title>
+	</head>
+	
+	<body>
+		<p>
+			Enter an amount of years: <input type="text" id="yearBox" size=10 value="1">
+			
+		</p>
+		
+		<input type="button" value="Years to seconds"
+				onclick="years=parseFloat(document.getElementById('yearBox').value);
+						 seconds = years * 31536000
+						 document.getElementById('outputDiv').innerHTML=
+						 'there are ' + seconds + ' seconds in ' + years + ' year(s)';">
+						 
+						 
+						 <div id="outputDiv"></div>
+ </body>
+ </html>
+		

@@ -1,0 +1,111 @@
+<html><!doctype html>
+<!-- pirate.html                               Dave Reed -->
+<!-- Simple page that translates words/phrases from      -->
+<!-- English to pirate at the click of a button.         -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Huttese Translator (Week 4) </title>
+   <script src="translator.js">
+	</script>
+ </head>
+
+ <body>
+   <h3>Learn to talk like a Tatooine gang lord!</h3>
+   <p>Simply click on the buttons to translate
+      words and/or phrases from English to Huttese<br/>(note, no polite phrases exist in this language).
+   </p>
+   <p>
+   <div  style="text-align:center">
+      <img src="http://images2.wikia.nocookie.net/__cb20080324151352/starwars/images/9/9e/BibFortuna_Jabba_Ep6.jpg" height= "400" width="550" id="pic" 
+            onmouseover="document.getElementById('pic').src= 'https://i1.ytimg.com/vi/fgGIt621kwk/maxresdefault.jpg';"
+            onmouseout="document.getElementById('pic').src= 'http://images2.wikia.nocookie.net/__cb20080324151352/starwars/images/9/9e/BibFortuna_Jabba_Ep6.jpg';">
+            
+      
+      </div>
+   
+   <table>
+   <tr><td>Greetings:<td><input type="button" value="hello"
+            onclick="printVar= 'Achuta ';
+					 PrintTrans(printVar);">
+                      
+                  
+     <input type="button" value="Grettings" 
+            onclick="printVar= 'Chut chut ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="who are you?" 
+            onclick="printVar= 'Ah&rsquo;chu apenkee? ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="I am a friend!" 
+            onclick="printVar= 'Dolpee kikyuna! ';
+                     PrintTrans(printVar);">
+        
+             
+   <tr><td>People:<td><input type="button" value="smuggler" 
+            onclick="printVar= 'Ulwan  ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="Master" 
+            onclick="printVar= 'Lorda  ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="boy" 
+            onclick="printVar= 'Bukee ';
+                     PrintTrans(printVar);">
+    
+     <input type="button" value="madam" 
+            onclick="printVar= 'Cheeka ';
+                     PrintTrans(printVar);">
+  
+     
+     <tr><td>Questions:<td><input type="button" value="Does that come with a warranty?" 
+            onclick="printVar= 'Va foppa gee wontahumpa? ';
+                     PrintTrans(printVar);">
+     
+     <input type="button" value="What are you doing here?" 
+            onclick="printVar= 'Kee chai chai cun kuta? ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="What do you do?" 
+            onclick="printVar= 'Waki mallya kuna chu chu? ';
+                     PrintTrans(printVar);">
+     
+    
+     <tr><td>Articles:<td><input type="button" value="and" 
+            onclick="printVar= 'An ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="The" 
+            onclick="printVar= 'Bu ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="That" 
+            onclick="printVar= 'Da ';
+                     PrintTrans(printVar);">
+    
+     
+     <tr><td>Places:<td><input type="button" value="home" 
+            onclick="printVar= 'Bunky dunko ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="Planeeto" 
+            onclick="printVar= 'Planet ';
+                     PrintTrans(printVar);">
+                       
+     <input type="button" value="Gardens" 
+            onclick="printVar= 'Planet ';
+                     PrintTrans(printVar);">
+     
+      
+     <tr><td><td><input type="button" value="Clear the Translation"
+            onclick="ClearTrans();">
+            
+    </table> 
+   </p>
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>

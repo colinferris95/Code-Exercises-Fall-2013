@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- mystery1.html                         Dave Reed -->
+<!-- This page changes an image source on mouseover. -->
+<!-- =============================================== -->
+
+<html>
+    <head>
+        <title>Resize(exercise 4.6)</title>
+    </head>
+
+    <body>
+        <div style="text-align:center">
+            <img id="mystery_img" src="http://balance3e.com/Images/happy.gif" alt="Mystery image" >
+            
+            <p>
+                Resize images
+            </p>
+			
+			<input type="button" value="Expand Image"
+					onclick="document.getElementById('mystery_img').style.height = '170px'"
+					onclick="document.getElementById('mystery_img').style.width = '170px'"/>
+			
+			<input type="button" value="Restore Image"
+					onclick="document.getElementById('mystery_img').style.height = '85px'"
+					onclick="document.getElementById('mystery_img').style.width = '85px'"/>
+			
+            
+          
+        </div>
+    </body>
+</html>
+

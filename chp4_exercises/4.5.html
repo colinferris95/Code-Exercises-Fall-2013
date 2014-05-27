@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- mystery1.html                         Dave Reed -->
+<!-- This page changes an image source on mouseover. -->
+<!-- =============================================== -->
+
+<html>
+    <head>
+        <title>Mystery Image(exercise 4.5)</title>
+    </head>
+
+    <body>
+        <div style="text-align:center">
+            <img id="mystery_img" src="http://balance3e.com/Images/mystery.gif" alt="Mystery image" height="125" width="125">
+            
+            <p>
+                Click buttons to swap images!
+            </p>
+            
+            <input type="button" value="Smile!" 
+					onclick="document.getElementById('mystery_img').src=
+					'http://balance3e.com/Images/happy.gif';" />
+
+            <input type="button" value="?" 			 					    				
+					onclick= "document.getElementById('mystery_img').src=
+					'http://balance3e.com/Images/mystery.gif';" />
+					
+			<input  type="button" value="apple" 
+					onclick= "document.getElementById('mystery_img').src=
+					'apple.png';"/>
+					
+			<input  type="button" value="Marist logo" 
+					onclick= "document.getElementById('mystery_img').src=
+					'marist.png';"/>
+          
+			<input  type="button" value="Windows logo" 
+					onclick= "document.getElementById('mystery_img').src=
+					'windows.png';"/>
+        </div>
+    </body>
+</html>
+

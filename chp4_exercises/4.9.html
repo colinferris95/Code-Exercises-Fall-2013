@@ -1,0 +1,29 @@
+<!doctype html>
+ <!-- help.html                                             Dave Reed -->
+ <!-- Web page that displays a message on image mouseover. -->
+ <!-- ==============================================================  -->
+ 
+ <html>
+   <head>
+     <title> Button Help(4.9) </title>
+	</head>
+	
+	<body>
+	   <p>
+	      Contents of the page.
+		</p>
+		<div style="text-align:right">
+				<img src="http://balance3e.com/Images/help.jpg" alt="Help Image" 
+				onmouseover="document.getElementById('outputDiv').innerHTML=
+				           'If you have trouble with this site,  ' +
+						   'contact <i>admin@foo.bar</i>.';"
+		
+				onmouseout="document.getElementById('outputDiv').innerHTML=
+				           'Welcome to my site!';">
+		<hr>
+		<div id="outputDiv">
+		  Welcome to my site!
+		</div>
+	</body>
+</html>
+						   

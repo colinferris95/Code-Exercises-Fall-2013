@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- mystery1.html                         Dave Reed -->
+<!-- This page changes an image source on mouseover. -->
+<!-- =============================================== -->
+
+<html>
+    <head>
+        <title>Mystery Image</title>
+    </head>
+
+    <body>
+        <div style="text-align:center">
+            <img id="mystery_img" src="http://balance3e.com/Images/mystery.gif" alt="Mystery image">
+            
+            <p>
+                Click buttons to swap images!
+            </p>
+            
+            <input type="button" value="Show Image" 
+					onclick="document.getElementById('mystery_img').src=
+					'http://balance3e.com/Images/happy.gif';" />
+
+            <input type="button" value="Hide Image" 			 					    				
+					onclick= "document.getElementById('mystery_img').src=
+					'http://balance3e.com/Images/mystery.gif';" />
+          
+        </div>
+    </body>
+</html>
+

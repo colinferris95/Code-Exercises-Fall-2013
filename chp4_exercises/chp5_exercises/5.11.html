@@ -1,0 +1,34 @@
+<!doctyper html>
+
+<html>
+	<head>
+		<title>Grades(5.11) </title>
+	</head>
+	<body>
+	<p>
+	Enter grade 1<input type="text" id="grade1" size=10 value="">
+	
+	Enter grade 2<input type="text" id="grade2" size=10 value="">
+	
+	Enter grade 3<input type="text" id="grade3" size=10 value="">
+	
+	Enter grade 4<input type="text" id="grade4" size=10 value="">
+	
+	</p>
+	
+	<input type="button" value="Grade Calculator"
+			onclick="value1= parseFloat(document.getElementById('grade1').value);
+					 value2= parseFloat(document.getElementById('grade2').value);
+					 value3= parseFloat(document.getElementById('grade3').value);
+					 value4= parseFloat(document.getElementById('grade4').value);
+					 total= value1 + value2 + value3 + value4;
+					 average= (total/4);
+					 document.getElementById('outputDiv').innerHTML=
+					 'This is your average= ' + average;">
+			
+	<div id="outputDiv"></div>		
+	
+</body>	
+</html>
+	
+		
